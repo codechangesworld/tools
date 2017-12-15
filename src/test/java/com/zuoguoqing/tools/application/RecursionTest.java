@@ -10,8 +10,6 @@
  */
 package com.zuoguoqing.tools.application;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 /**
