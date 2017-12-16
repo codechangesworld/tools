@@ -152,7 +152,7 @@ public interface Graph<V, E> {
      * @return 拓扑序列的迭代器
      * @throws UnsupportedOperationException
      */
-    Iterator<?> topLogicalSort() throws UnsupportedOperationException;
+    Iterator<?> topologicalSort() throws UnsupportedOperationException;
     
     /**
      * 获取有向无环图的关键路径，无向图不支持此操作

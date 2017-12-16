@@ -53,7 +53,7 @@ public class DirectGraph<V, E> extends AbstractGraph<V, E> {
     }
 
     @Override
-    public Iterator<?> topLogicalSort() throws UnsupportedOperationException {
+    public Iterator<?> topologicalSort() throws UnsupportedOperationException {
         // TODO Auto-generated method stub
         return null;
     }
