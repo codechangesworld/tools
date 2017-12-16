@@ -40,28 +40,28 @@ public interface BinaryTree<T> {
      * 返回树的根节点
      * @return
      */
-    Node<T> getRoot();
+    BinaryTreeNode<T> getRoot();
     
     /**
      * 返回节点的父节点
      * @param node
      * @return
      */
-    Node<T> getParent(Node<T> node);
+    BinaryTreeNode<T> getParent(BinaryTreeNode<T> node);
     
     /**
      * 返回节点的左孩子节点
      * @param node
      * @return
      */
-    Node<T> getLeftChild(Node<T> node);
+    BinaryTreeNode<T> getLeftChild(BinaryTreeNode<T> node);
     
     /**
      * 返回节点的右孩子节点
      * @param node
      * @return
      */
-    Node<T> getRightChild(Node<T> node);
+    BinaryTreeNode<T> getRightChild(BinaryTreeNode<T> node);
     
     /**
      * 将数据插入树中
@@ -82,7 +82,7 @@ public interface BinaryTree<T> {
      * @param data
      * @return
      */
-    Node<T> find(T data);
+    BinaryTreeNode<T> find(T data);
 
     /**
      * 先序遍历树中节点

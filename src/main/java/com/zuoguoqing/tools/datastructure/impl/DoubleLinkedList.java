@@ -14,7 +14,7 @@ import com.zuoguoqing.tools.datastructure.List;
 import com.zuoguoqing.tools.exception.OutOfBoundaryException;
 
 /**
- * 
+ * 双链表
  * @author Zuo Guoqing
  * @date 2017年12月14日 下午5:29:37
  * @version 1.0

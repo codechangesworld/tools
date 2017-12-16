@@ -14,7 +14,7 @@ import com.zuoguoqing.tools.datastructure.Stack;
 import com.zuoguoqing.tools.exception.StackEmptyException;
 
 /**
- * 
+ * 数组存储栈
  * @author Zuo Guoqing
  * @date 2017年12月14日 下午9:36:47
  * @version 1.0
