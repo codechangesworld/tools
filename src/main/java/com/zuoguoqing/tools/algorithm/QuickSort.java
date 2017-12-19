@@ -40,7 +40,7 @@ public class QuickSort {
     }
 
     /**
-     * 分区算法
+     * 分区算法，默认使用最低位元素作为轴点元素
      * 
      * @param array
      * @param low
@@ -48,7 +48,7 @@ public class QuickSort {
      * @return 返回轴点位置
      */
     private static int partition(int[] array, int low, int height) {
-        int pivot = array[low];
+        int pivot = array[low]; // 默认轴点元素，可以使用随机轴点元素进行优化
         while (low < height) {
             while (low < height && array[height] >= pivot) { // 从高位开始，寻找第一个小于pivot的元素
                 height--;
@@ -59,7 +59,7 @@ public class QuickSort {
             }
             array[height] = array[low]; // 将大数放右边
         }
-        array[low] = pivot; // 将轴点元素放在最终位置
+        array[low] = pivot; // 将轴点元素放在最终轴点位置
 
         return low;
     }

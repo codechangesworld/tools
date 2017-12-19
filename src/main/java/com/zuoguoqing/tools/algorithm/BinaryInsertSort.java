@@ -15,6 +15,8 @@ package com.zuoguoqing.tools.algorithm;
  * <p>
  * 时间复杂度：n*n
  * <p>
+ * 空间复杂度：1
+ * <p>
  * 大致思想：<br>
  * 在直接插入排序的基础上，每次向前边有序子数组中插入元素时，<br>
  * 先使用折半排序法找出要插入的位置，然后一次性移动数组元素。
@@ -45,9 +47,9 @@ public class BinaryInsertSort {
                     l = mid + 1;
                 }
             }
-            insert = h + 1; // 最终插入位置是h+1
+            insert = h + 1; // 最终插入位置是h+1或low
 
-            for (int j = i - 1; j >= insert; j--) {
+            for (int j = i - 1; j >= insert; j--) { // 将 [insert...i-1]之间的元素依次后移一位
                 array[j + 1] = array[j];
             }
             array[insert] = tmp;

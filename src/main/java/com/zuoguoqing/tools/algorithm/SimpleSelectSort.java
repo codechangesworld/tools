@@ -15,6 +15,8 @@ package com.zuoguoqing.tools.algorithm;
  * <p>
  * 时间复杂度：n*n
  * <p>
+ * 空间复杂度：1
+ * <p>
  * 算法思想：<br>
  * 对n个元素的数组进行n-1次选择，每次选出最小的元素放到前边排好序的子数组后边。
  * 

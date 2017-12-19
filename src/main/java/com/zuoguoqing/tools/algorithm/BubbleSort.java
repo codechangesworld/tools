@@ -15,6 +15,8 @@ package com.zuoguoqing.tools.algorithm;
  * <p>
  * 时间复杂度：最好n，最坏n*n，平均n*n
  * <p>
+ * 空间复杂度：1
+ * <p>
  * 算法思想：<br>
  * 对n个元素的数组进行n-1次排序，每次排序将未排序的数组中的最大的元素放入上次排好序的子数组的最前边。
  * 
@@ -23,6 +25,7 @@ package com.zuoguoqing.tools.algorithm;
  * @version 1.0
  */
 public class BubbleSort {
+    
     public static void sort(int[] array) {
         sort(array, 0, array.length - 1);
     }

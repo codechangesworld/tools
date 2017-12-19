@@ -13,10 +13,8 @@ package com.zuoguoqing.tools.algorithm;
 /**
  * 折半查找（二分查找）
  * <p>
- * 
  * 注：
  * <p>
- * 
  * 时间复杂度：O(log(n))
  * <p>
  * 平均查找长度 ASL = log(n+1) - 1

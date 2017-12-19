@@ -47,11 +47,11 @@ public class MergeSort {
      * @param height
      */
     private static void merge(int[] array, int low, int mid, int height) {
-        int[] tmp = new int[height - low + 1];
+        int[] tmp = new int[height - low + 1];  // 临时数组
         int i = low;
         int j = mid + 1;
         int k = 0;
-        while (i <= mid && j <= height) {
+        while (i <= mid && j <= height) {   // 依次取出两个子序列中较小的元素，放入临时数组中
             if (array[i] < array[j]) {
                 tmp[k++] = array[i++];
             } else {
@@ -59,13 +59,15 @@ public class MergeSort {
             }
         }
 
+        // 将为放入临时数组中的元素放入
         while (i <= mid) {
             tmp[k++] = array[i++];
         }
         while (j <= height) {
             tmp[k++] = array[j++];
         }
-        for (k = 0; k < height - low + 1; k++) {
+        
+        for (k = 0; k < height - low + 1; k++) {    // 修改array数组
             array[low + k] = tmp[k];
         }
     }

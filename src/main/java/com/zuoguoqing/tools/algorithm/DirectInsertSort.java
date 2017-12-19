@@ -15,6 +15,8 @@ package com.zuoguoqing.tools.algorithm;
  * <p>
  * 时间复杂度：最好n，最坏n*n，平均n*n
  * <p>
+ * 空间复杂度：1
+ * <p>
  * 算法大致思想：<br>
  * 从待排序数组中第二个元素开始，依次插入前边排好序的子数组中。
  * 
